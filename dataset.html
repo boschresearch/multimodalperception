@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Datasets | Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Datasets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally" />
+<meta property="og:description" content="Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally" />
+<link rel="canonical" href="http://boschresearch.github.io/multimodalperception/dataset.html" />
+<meta property="og:url" content="http://boschresearch.github.io/multimodalperception/dataset.html" />
+<meta property="og:site_name" content="Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges" />
+<script type="application/ld+json">
+{"url":"http://boschresearch.github.io/multimodalperception/dataset.html","headline":"Datasets","description":"Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF4747">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="assets/css/style.css?v=">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h3 class="project-name">Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges</h3>
+      <h4 class="project-tagline">Di Feng*, Christian Haase-Schuetz*, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer <p> Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology <p> * Contributed equally</h4>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      
+<h1 id="datasets">Datasets</h1>
+
+<p><a id="bck" href="index.html#introtab"><b>Back to index</b></a>    </p>
+
+<table id="commontab">
+
+<tr><th id="datasetname" style="width:15%">Name </th><th style="width:15%"> Sensing Modalities </th><th style="width:8%"> Year (published) </th><th style="width:15%"> Labelled (benchmark) </th><th style="width:7%"> Recording area </th><th style="width:15%"> Size </th><th> Categories / Remarks </th><th> Link </th></tr>
+
+<tr><td id="datasetname" valign="top">Astyx HiRes2019 <a href="./ref/meyer2019euma.bib">[ref]</a></td><td valign="top">Radar, Visual camera, 3D LiDAR</td><td valign="top">2019</td><td valign="top">3D bounding boxes</td><td valign="top">n.a.</td><td valign="top"> 500 frames (5000 annotated objects)</td><td valign="top">Car, Bus, Cyclist, Motorcyclist, Person, Trailer, Truck</td><td valign="top"><a href="https://www.astyx.com/development/astyx-hires2019-dataset.html">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">A2D2 <a href="./ref/aev2019.bib">[ref]</a></td><td valign="top">Visual cameras (6); 3D LiDAR (5); Bus data</td><td valign="top">2019</td><td valign="top">2D/3D bounding boxes, 2D/3D instance segmentation</td><td valign="top">Gaimersheim, Ingolstadt, Munich</td><td valign="top">40k frames (semantics), 12k frames (3D objects), 390k frames unlabeled</td><td valign="top">Car, Bicycle, Pedestrian, Truck, Small vehicles, Traffic signal, Utility vehicle, Sidebars, Speed bumper, Curbstone, Solid line, Irrelevant signs, Road blocks, Tractor, Non-drivable street, Zebra crossing, Obstacles / trash, Poles, RD restricted area, Animals, Grid structure, Signal corpus, Drivable cobbleston, Electronic traffic, Slow drive area, Nature object, Parking area, Sidewalk, Ego car, Painted driv. instr., Traffic guide obj., Dashed line, RD normal street, Sky, Buildings, Blurred area, Rain dirt</td><td valign="top"><a href="https://www.audi-electronics-venture.de/aev/web/en/driving-dataset.html">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">A*3D Dataset <a href="./ref/astar-3d.bib">[ref]</a></td><td valign="top">Visual cameras (2); 3D LiDAR</td><td valign="top">2019</td><td valign="top">3D bounding boxes</td><td valign="top">Singapore</td><td valign="top">39k frames, 230k objects</td><td valign="top">Car, Van, Bus, Truck, Pedestrians, Cyclists, and Motorcyclists; Afternoon and night, wet and dry</td><td valign="top"><a href="https://github.com/I2RDL2/ASTAR-3D">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">EuroCity Persons <a href="./ref/braun2019eurocity.bib">[ref]</a></td><td valign="top">Visual camera; Announced: stereo, LiDAR, GNSS and intertial sensors</td><td valign="top">2019</td><td valign="top">2D bounding boxes</td><td valign="top">12 countries in Europe, 27 cities</td><td valign="top">47k frames, 258k objects</td><td valign="top">Pedestrian, Rider, Bicycle, Motorbike, Scooter, Tricycle, Wheelchair, Buggy, Co-Rider; Highly diverse: 4 seasons, day and night, wet and dry</td><td valign="top"><a href="https://eurocity-dataset.tudelft.nl/eval/overview/home">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">Oxford RobotCar <a href="./ref/RobotCarDatasetIJRR.bib">[ref] (2016)</a>,<a href="./ref/RadarRobotCarDatasetArXiv.bib">[ref] (2019)</a></td><td valign="top">2016: Visual cameras (fisheye &amp; stereo), 2D &amp; 3D LiDAR, GNSS, and inertial sensors; 2019: Radar, 3D Lidar (2), 2D LiDAR (2), visual cameras (6), GNSS and inertial sensors</td><td valign="top">2016, 2019</td><td valign="top">no</td><td valign="top">Oxford</td><td valign="top">2016: 11,070,651 frames (stereo), 3,226,183 frames (3D LiDAR); 2019: 240k scans (Radar), 2.4M frames (LiDAR)</td><td valign="top">Long-term autonomous driving. Various weather conditions, including heavy rain, night, direct sunlight and snow.</td><td valign="top"><a href="http://robotcar-dataset.robots.ox.ac.uk/downloads/">Dataset Website 2016</a>, <a href="http://ori.ox.ac.uk/datasets/radar-robotcar-dataset">Dataset Website 2019</a>  </td></tr>
+
+<tr><td id="datasetname" valign="top">Waymo Open Dataset <a href="./ref/waymo_open_dataset.bib">[ref]</a></td><td valign="top">3D LiDAR (5), Visual cameras (5)</td><td valign="top">2019</td><td valign="top">3D bounding box, Tracking</td><td valign="top">n.a.</td><td valign="top">200k frames, 12M objects (3D LiDAR), 1.2M objects (2D camera)</td><td valign="top">Vehicles, Pedestrians, Cyclists, Signs</td><td valign="top"><a href="https://waymo.com/open/">Dataset Website</a>	</td></tr>
+
+<tr><td id="datasetname" valign="top">Lyft Level 5 AV Dataset 2019 <a href="./ref/lyft2019.bib">[ref]</a></td><td valign="top">3D LiDAR (5), Visual cameras (6)</td><td valign="top">2019</td><td valign="top">3D bounding box</td><td valign="top">n.a.</td><td valign="top">55k frames</td><td valign="top">Semantic HD map included</td><td valign="top"><a href="https://level5.lyft.com/dataset/">Dataset Website</a>	</td></tr>
+
+<tr><td id="datasetname" valign="top">Argoverse <a href="./ref/Chang_2019_CVPR.bib">[ref]</a></td><td valign="top">3D LiDAR (2), Visual cameras (9, 2 stereo)</td><td valign="top">2019</td><td valign="top">3D bounding box, Tracking, Forecasting</td><td valign="top">Pittsburgh, Pennsylvania, Miami, Florida</td><td valign="top">113 scenes, 300k trajectories</td><td valign="top">Vehicle, Pedestrian, Other Static, Large Vehicle, Bicycle, Bicyclist, Bus, Other Mover, Trailer, Motorcyclist, Moped, Motorcycle, Stroller, Emergency Vehicle, Animal, Wheelchair, School Bus; Semantic HD maps (2) included</td><td valign="top"><a href="https://www.argoverse.org/data.html">Dataset Website</a>	</td></tr>
+
+<tr><td id="datasetname" valign="top">PandaSet <a href="./ref/pandaset.bib">[ref]</a></td><td valign="top">3D LiDAR (2), Visual cameras (6), GNSS and inertial sensors</td><td valign="top">2019</td><td valign="top">3D bounding box</td><td valign="top">San Francisco, El Camino Real</td><td valign="top">Announced: 60k frames (camera), 20k frames (LiDAR), 125 scenes</td><td valign="top">28 classes, 37 semantic segmentation labels; Solid state LiDAR</td><td valign="top"><a href="https://scale.com/open-datasets/pandaset">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">nuScenes dataset <a href="./ref/nuscene.bib">[ref]</a></td><td valign="top"> Visual cameras (6), 3D LiDAR, Radars (5) </td><td valign="top"> 2019 </td><td valign="top"> 3D bounding box </td><td valign="top"> Boston, Singapore </td><td valign="top"> 1000 scenes, 1.4M frames (camera, Radar), 390k frames (3D LiDAR) </td><td valign="top"> Car or Van or SUV, Truck, Pickup Truck, Front Of Semi Truck, Bendy Bus, Rigid Bus, Construction Vehicle, Motorcycle, Bicycle, Bicycle Rack, Trailer, Police Vehicle, Ambulance, Train, Adult Pedestrian, Child Pedestrian, Construction Worker, Stroller, Wheelchair, Portable Personal Mobility Vehicle, Traffic Police, Other Police, Animal, Traffic Cone, Temporary Traffic Barrier, Pushable Pullable Object, Debris </td><td valign="top"> <a href="https://www.nuscenes.org/download">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">BLVD <a href="./ref/blvdICRA2019.bib">[ref]</a></td><td valign="top"> Visual (Stereo) camera, 3D LiDAR </td><td valign="top"> 2019 </td><td valign="top"> 3D bounding box, Tracking, Interaction, Intention </td><td valign="top"> Changshu </td><td valign="top"> 120k frames, 249,129 objects </td><td valign="top"> Vehicle, Pedestrian, Rider during day and night </td><td valign="top"> <a href="https://github.com/VCCIV/BLVD/">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">H3D dataset <a href="./ref/360LiDARTracking_ICRA_2019.bib">[ref]</a></td><td valign="top"> Visual cameras (3), 3D LiDAR </td><td valign="top"> 2019 </td><td valign="top"> 3D bounding box </td><td valign="top"> San Francisco </td><td valign="top">  27,721 frames, 1,071,302 objects </td><td valign="top"> Car, Pedestrian, Cyclist, Truck, Misc, Animal, Motorcyclist, Bus </td><td valign="top"> <a href="https://usa.honda-ri.com/hdd/introduction/h3d">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">ApolloScape <a href="./ref/apolloscape_arXiv_2018.bib">[ref]</a></td><td valign="top"> Visual (Stereo) camera, 3D LiDAR, GNSS and inertial sensors </td><td valign="top"> 2018, 2019 </td><td valign="top"> 2D/3D pixel-level segmentation, lane marking, instance segmentation, Depth </td><td valign="top"> n.a. </td><td valign="top"> 143,906 frames, 89,430 objects </td><td valign="top"> Rover, Sky, Car, Motobicycle, Bicycle, Person, Rider, Truck, Bus, Tricycle, Road, Sidewalk, Traffic Cone, Road Pile, Fence, Traffic Light, Pole, Traffic Sign, Wall, Dustbin, Billboard, Building, Bridge, Tunnel, Overpass, Vegetation </td><td valign="top"> <a href="http://apolloscape.auto/scene.html">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">DBNet dataset <a href="./ref/chen2018lidar.bib">[ref]</a></td><td valign="top">3D LiDAR, Dashboard visual camera, GNSS</td><td valign="top"> 2018 </td><td valign="top">  Driving behaviours (Vehicle speed and wheel angles) </td><td valign="top"> Multiple areas in China </td><td valign="top"> Over 10k frames </td><td valign="top"> In total seven datasets with different test scenarios, such as seaside roads, school areas, mountain roads </td><td valign="top"> <a href="http://www.dbehavior.net/">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">KAIST multispectral dataset <a href="./ref/choi2018kaist.bib">[ref]</a></td><td valign="top"> Visual (Stereo) and thermal camera, 3D LiDAR, GNSS and inertial sensors </td><td valign="top"> 2018 </td><td valign="top"> 2D bounding box, drivable region, image enhancement, depth, colorization </td><td valign="top"> Seoul </td><td valign="top"> 7,512 frames, 308,913 objects </td><td valign="top"> Person, Cyclist, Car during day and night, fine time slots (sunrise, afternoon,...) </td><td valign="top"> <a href="http://multispectral.kaist.ac.kr">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">Multi-spectral Object Detection dataset <a href="./ref/takumi2017multispectral.bib.bib">[ref]</a></td><td valign="top"> Visual and thermal cameras </td><td valign="top"> 2017 </td><td valign="top"> 2D bounding box </td><td valign="top"> University environment in Japan </td><td valign="top"> 7,512 frames, 5,833 objects </td><td valign="top"> Bike, Car, Car Stop, Color Cone, Person during day and night</td><td valign="top"> <a href="https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">Multi-spectral Semantic Segmentation dataset <a href="./ref/ha2017mfnet.bib">[ref]</a></td><td valign="top"> Visual and thermal camera </td><td valign="top"> 2017 </td><td valign="top"> 2D pixel-level segmentation </td><td valign="top"> n.a. </td><td valign="top"> 1569 frames </td><td valign="top"> Bike, Car, Person, Curve, Guardrail, Color Cone, Bump during day and night </td><td valign="top"> <a href="https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">Multi-modal Panoramic 3D Outdoor (MPO) dataset <a href="./ref/jung2016multi.bib.bib">[ref]</a></td><td valign="top"> Visual camera, LiDAR and GNSS </td><td valign="top"> 2016 </td><td valign="top"> Place categorization </td><td valign="top"> Fukuoka </td><td valign="top"> 650 scans (dense), 34200 scans (sparse) </td><td valign="top"> No dynamic objects </td><td valign="top"> <a href="http://robotics.ait.kyushu-u.ac.jp/~kurazume/research-e.php?content=db\#d08">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">KAIST multispectral pedestrian  <a href="./ref/hwang2015multispectral.bib">[ref]</a></td><td valign="top"> Visual and thermal camera </td><td valign="top"> 2015 </td><td valign="top"> 2D bounding box </td><td valign="top"> Seoul </td><td valign="top"> 95,328 frames, 103,128 objects </td><td valign="top"> Person, People, Cyclist during day and night</td><td valign="top"> <a href="https://sites.google.com/site/pedestrianbenchmark/home">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">KITTI <a href="./ref/Geiger2012CVPR.bib">[ref] (2012)</a>, <a href="./ref/Geiger2013IJRR.bib">[ref] (2013)</a></td><td valign="top"> Visual (Stereo) camera, 3D LiDAR, GNSS and inertial sensors </td><td valign="top"> 2012, 2013, 2015 </td><td valign="top"> 2D, 3D bounding box, visual odometry, road detection, optical flow, tracking, depth, 2D instance and pixel-level segmentation </td><td valign="top"> Karlsruhe </td><td valign="top"> 7481 frames (training) 80.256 objects </td><td valign="top"> Car, Van, Truck, Pedestrian, Person (sitting), Cyclist, Tram, Misc </td><td valign="top"> <a href="http://www.cvlibs.net/datasets/kitti/">Dataset Website</a> </td></tr>
+
+<tr><td id="datasetname" valign="top">The Málaga Stereo and Laser Urban dataset <a href="./ref/blanco2014malaga.bib">[ref]</a></td><td valign="top"> Visual (Stereo) camera, 5x 2D LiDAR (yielding 3D information), GNSS and inertial sensors </td><td valign="top"> 2014 </td><td valign="top"> no </td><td valign="top"> Málaga </td><td valign="top"> 113,082 frames, 5,654.6 s  (camera); &gt;220,000 frames, ~5,000 s  (LiDARs) </td><td valign="top"> n.a. </td><td valign="top"> <a href="https://www.mrpt.org/MalagaUrbanDataset">Dataset Website</a> </td></tr>
+
+</table>
+
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">
+        (c) Robert Bosch GmbH 2019, <a href="http://www.bosch.com/research">www.bosch.com/research</a>.
+		<p></p>
+        This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

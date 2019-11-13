@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Detection Thermal | Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Detection Thermal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally" />
+<meta property="og:description" content="Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally" />
+<link rel="canonical" href="http://boschresearch.github.io/multimodalperception/detection/detection_thermal.html" />
+<meta property="og:url" content="http://boschresearch.github.io/multimodalperception/detection/detection_thermal.html" />
+<meta property="og:site_name" content="Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges" />
+<script type="application/ld+json">
+{"url":"http://boschresearch.github.io/multimodalperception/detection/detection_thermal.html","headline":"Detection Thermal","description":"Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF4747">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="../assets/css/style.css?v=">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h3 class="project-name">Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges</h3>
+      <h4 class="project-tagline">Di Feng*, Christian Haase-Schuetz*, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer <p> Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology <p> * Contributed equally</h4>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="detection-thermal">Detection Thermal</h1>
+<p><a id="bck" href="../index.html#introtab"><b>Back to index</b></a>    
+<a href="../detection.html#bck"><b>Back to Detection</b></a>    
+<a href="../detection/detection_2d.html#bck"><img src="../img/2D.png" alt="2D" width="50" /></a>   
+<a href="../detection/detection_3d.html#bck"><img src="../img/3D.png" alt="3D" width="50" /></a>   
+<a href="../detection/detection_thermal.html#bck"><img src="../img/Thermal.png" alt="Thermal" width="50" /></a>  
+<a href="../detection/detection_lidar.html#bck"><img src="../img/LiDAR.png" alt="LiDAR" width="50" /></a>  
+<a href="../detection/detection_radar.html#bck"><img src="../img/Radar.png" alt="Radar" width="50" /></a></p>
+
+<table id="commontab">
+<tr><th> Reference </th><th> Sensors </th><th> Object Type </th><th> Sensing Modality Representations and Processing </th><th> Network Pipeline </th><th> How to generate Region Proposals (RP) </th><th> When to fuse </th><th> Fusion Operation and Method </th><th> Fusion Level </th><th> Dataset(s) used </th></tr>
+
+<tr><td valign="top"> Guan <i>et al.</i>, 2018 
+    <a href="https://arxiv.org/abs/1802.09972">[pdf]</a><a href="../ref/guan2018fusion.bib">[ref]</a>
+    </td><td valign="top"> Vision camera, thermal camera </td><td valign="top"> 2D Pedestrian </td><td valign="top"> RGB image, thermal image. Each processed by a base network built on VGG16 </td><td valign="top"> Faster-RCNN </td><td valign="top"> RPN with fused features </td><td valign="top"> Before and after RP </td><td valign="top"> Feature concatenation, Mixture of Experts </td><td valign="top"> Early,  Middle, Late </td><td valign="top"> KAIST Pedestrian Dataset </td></tr>
+
+<tr><td valign="top"> Takumi <i>et al.</i>, 2017 
+    <a href="https://dl.acm.org/citation.cfm?id=3126727">[pdf]</a><a href="../ref/takumi2017multispectral.bib">[ref]</a>
+    </td><td valign="top"> Vision camera, thermal camera </td><td valign="top"> Multiple 2D objects </td><td valign="top"> RGB image, NIR, FIR, FIR image. Each processed by YOLO </td><td valign="top"> YOLO </td><td valign="top"> YOLO predictions for each spectral image </td><td valign="top"> After RP </td><td valign="top"> Ensemble: ensemble final predictions for each YOLO detector </td><td valign="top"> Late </td><td valign="top"> self-recorded data</td></tr>
+
+<tr><td valign="top"> Wagner <i>et al.</i>, 2016 
+    <a href="https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2016-118.pdf">[pdf]</a><a href="../ref/wagner2016multispectral.bib">[ref]</a>
+    </td><td valign="top"> Vision camera, thermal camera </td><td valign="top"> 2D Pedestrian </td><td valign="top"> RGB image, thermal image. Each processed by CaffeeNet </td><td valign="top"> R-CNN </td><td valign="top"> ACF+T+THOG detector </td><td valign="top"> After RP </td><td valign="top"> Feature concatenation </td><td valign="top"> Early, Late </td><td valign="top"> KAIST Pedestrian Dataset </td></tr>
+
+<tr><td valign="top"> Liu <i>et al.</i>, 2016 
+    <a href="https://dx.doi.org/10.5244/C.30.73">[pdf]</a><a href="../ref/liu2016bmvc.bib">[ref]</a>
+    </td><td valign="top"> Vision camera, thermal camera </td><td valign="top"> 2D Pedestrian </td><td valign="top"> RGB image, thermal image. Each processed by NiN network </td><td valign="top"> Faster-RCNN </td><td valign="top"> RPN with fused (or separate) features </td><td valign="top"> Before and after RP </td><td valign="top"> Feature concatenation, average mean, Score fusion (Cascaded CNN) </td><td valign="top"> Early, Middle, Late </td><td valign="top"> KAIST Pedestrian Dataset </td></tr>
+</table>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">
+        (c) Robert Bosch GmbH 2019, <a href="http://www.bosch.com/research">www.bosch.com/research</a>.
+		<p></p>
+        This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

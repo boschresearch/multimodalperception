@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Vehicles | Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Vehicles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally" />
+<meta property="og:description" content="Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally" />
+<link rel="canonical" href="http://boschresearch.github.io/multimodalperception/vehicles.html" />
+<meta property="og:url" content="http://boschresearch.github.io/multimodalperception/vehicles.html" />
+<meta property="og:site_name" content="Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges" />
+<script type="application/ld+json">
+{"url":"http://boschresearch.github.io/multimodalperception/vehicles.html","headline":"Vehicles","description":"Di Feng, Christian Haase-Schuetz, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer &lt;p&gt; Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology &lt;p&gt; * Contributed equally","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF4747">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="assets/css/style.css?v=">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h3 class="project-name">Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges</h3>
+      <h4 class="project-tagline">Di Feng*, Christian Haase-Schuetz*, Lars Rosenbaum, Heinz Hertlein, Claudius Glaeser, Fabian Timm, Werner Wiesbeck and Klaus Dietmayer <p> Robert Bosch GmbH in cooperation with Ulm University and Karlruhe Institute of Technology <p> * Contributed equally</h4>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="vehicles">Vehicles</h1>
+<p><a id="bck" href="index.html#introtab"><b>Back to index</b></a>    </p>
+
+<table id="commontab">
+	
+
+  
+  <tr>
+     <th id="vehicle"> Demonstration </th>
+     <th id="vehicle"> Year </th>
+     <th id="vehicle"> Route </th>
+     <th id="vehicle"> Vehicle </th>
+     <th id="vehicle"> Sensor Setup </th>
+     <th id="vehicle"> Perception Range </th>
+  
+</tr>
+	
+	
+ 
+ <tr>
+  <td valign="TOP"> Daimler2013 <a href="#1">[1]</a> </td>
+  <td valign="TOP"> 2013 </td>
+  <td valign="TOP"> Bertha Benz Memorial Route from Mannheim to Pforzheim (approx. 65 miles). The route comprises rural roads, urban areas, small villages and various traffic situations (e.g. intersections)</td>
+  <td valign="TOP"> Mercedes Benz S class </td>
+  <td valign="TOP"> Stereo camera on the front, two mono cameras (front and back), 4 short-range radars, 4  long-range radars</td>
+  <td valign="TOP"> 360 view
+     <p> &plusmn; 200 meter for radar, &plusmn;130m for camera, &plusmn; 80m for stereo camera, &plusmn;40 m short-range radar </p> 
+  </td>
+  
+</tr> 
+
+
+  <tr>
+    <td valign="TOP"> BMW2015 <a href="#2">[2]</a> </td>
+    <td valign="TOP"> 2015 </td>
+    <td valign="TOP"> Firstly, the system was thoroughly tested on a test track. <p>"The first successful automated trip between Munich and Ingolstadt, without driver intervention, occurred on June 16th, 2011. Since then, thousands of kilometers of automated driving experience on highways have been achieved." </p> </td>
+    <td valign="TOP"> BMW 5 </td>
+    <td valign="TOP"> Differential GPS, four laser scanner (two 4-layer, two single-layer), three radar, four ultrasonic and a mono camera </td>
+    <td valign="TOP"> Values for views and ranges not published. <p> "The laser scanner sensors provide a complete surround view of the vehicle’s environment without any gaps. The radar sensors in the front and the rear enable longrange detection of vehicles and obstacles. The ultrasonic sensors on the side provide a redundant source for detecting close vehicles directly to the side. The mono camera in the front is able to reliably classify obstacles, such as vehicles, and detect lane markings for localization." </p> </td>
+</tr>
+  
+  
+  <tr>
+    <td valign="TOP"> Ulm2015 <a href="#3">[3]</a> </td>
+    <td valign="TOP"> 2015 </td>
+    <td valign="TOP"> 5 km route around the campus of Ulm University. 
+      <p>It includes traffic lights, crosswalks, and roundabouts.</p>
+      <p> Half of the track does not contain any lane markings. Huge amount of pedestrians and other vulnerable road users. Vehicles suddenly turning into the ego vehicle’s driving path (especially during rush hour).</p>
+      <p>The speed limit on the course varies between 50 and 70 km/h. </p>
+    </td>
+    <td valign="TOP"> Mercedes-Benz E-Class </td>
+    <td valign="TOP"> Three IBEO LUX laser scanners in the front, a forward-facing monochrome camera (Baumer TXG14f), a long-range front radar (Continental ARS 310), two mid-range rear radar (Bosch MRR), a long-range rear radar (Bosch LRR 3 FMCW), two rearward facing cameras and a real-time kinematic (RTK) system in combination with a differential GPS</td>
+    <td valign="TOP"> Laser scanners: 210° view and maximum range of up to 200 m.
+      <p>Monochrome front camera: 56° view.</p>
+      <p>long-range front radar: range from 0.25 m to 200 m.</p>
+      <p>Mid-range rear radar: 150° view and up to 90 m range.</p>
+      <p>Long-range rear radar: 30° view and 250 m range.</p>
+      <p>Rear camera (Baumer TXG14f): 20° view.</p>
+      <p>Rear camera (Baumer TXG06): 56° view. </p>
+    </td> 
+</tr>
+  
+  
+   <tr>
+    <td valign="TOP"> Stanford2008 <a href="#4">[4]</a> </td>
+    <td valign="TOP"> 2008 </td>
+    <td valign="TOP"> DARPA Urban Challenge:
+        <p>97 km urban environment including a variety of roads, intersections, and parking lots.</p>
+        <p>Maneuvers: passing parked or slow-moving vehicles, precedence handling at intersections with multiple stop signs, merging into fast- moving traffic, left turns across oncoming traffic, parking in a parking lot, and the execution of U-turns in situations where a      road is completely blocked. Vehicle speeds were generally limited to 30mph, with lower speed limits in many places.</p>
+    </td>
+    <td valign="TOP"> Modified 2006 Volkswagen Passat Wagon</td>
+    <td valign="TOP"> Five laser rangefinders (manufactured by IBEO, Riegl, SICK, and Velodyne), five BOSCH radars and an Applanix GPS-aided inertial navigation system.</td>
+    <td valign="TOP"> The vehicle has an obstacle detection range of up to 120 meters.
+        <p>Velodyne laser scanner: 360° horizontal FOV, 30° vertical FOV and 60 m range.</p>
+        <p>IBEO laser scanner:  capable of detecting large vertical obstacles, such as cars and signposts </p>
+    </td>
+</tr>
+  
+  
+  <tr>
+    <td valign="TOP"> CMU2008 <a href="#5">[5]</a> </td>
+    <td valign="TOP"> 2008 </td>
+    <td valign="TOP"> DARPA Urban Challenge (see above) </td>
+    <td valign="TOP"> Modified 2007 Chevrolet Tahoe</td>
+    <td valign="TOP"> GPS/IMU, 10 lasers (manufactured by IBEO, SICK, Continental, and Velodyne), two front-radars, one rear-radar, and 2 cameras </td>
+    <td valign="TOP"> SICK LMS 291-S05/S14 LIDAR: 180/90 deg × 0.9 deg FOV with 1/0.5-deg angular resolution &amp; 80m range.
+        <p>Velodyne HDL-64 LIDAR: 360×26-deg FOV with 0.1-deg angular resolution &amp; 70m range.</p>
+        <p>Continental ISF 172 LIDAR: 12×3.2 deg FOV &amp; 150m range.</p>
+        <p>IBEO Alasca XT LIDAR: 240×3.2 deg FOV &amp; 300 m range.</p>
+        <p>Continental ARS 300 Radar: 60/17 deg×3.2 deg FOV &amp; 60m/200m range.</p>
+        <p>Point Grey Firefly High-dynamic-range camera: 45° FOV </p>
+    </td>
+  </tr>
+
+
+   <tr>
+    <td valign="TOP"> Baidu <a href="#7">[7]</a>, <a href="#8">[8]</a> </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP"> 5 cameras (2 front, 2 on either side and 1 rear) and 2 radars (front and rear) along with 3 16-line LiDARs (2 rear and 1 front) and 1 128-line LiDAR </td>
+    <td valign="TOP"> Velodyne HDL-64 LIDAR: 360° FOV </td>
+   </tr>
+  
+  
+  <tr>
+    <td valign="TOP"> UBER <a href="#9">[9]</a>, <a href="#10">[10]</a>, <a href="#11">[11]</a> </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP"> Since September 2016: Self-driving taxis with a safety driver in Pittsburgh <a href="#11">[11]</a>
+        <p>Since December 2016: Self-driving Volvo XC90s in San Francisco <a href="#9">[9]</a> </p>
+    </td>
+    <td valign="TOP"> Volvo XC90 </td>
+    <td valign="TOP">  
+        <p>Multiple LiDAR sensors (including one, top-mounted Velodyne LIDAR)</p>
+        <p>Multiple cameras that provide high resolution, near-, medium-, and long-range imagery. There are cameras mounted in the sensor pod on top of the vehicle and around the vehicle. Some of these cameras have a wide field of view and some have a narrow field of view. </p>
+        <p>Forward-facing radars are mounted below the headlamps, side-facing radars are mounted in the front and rear corners of the vehicle, and rear-facing radars are mounted near the ends of the bumper beam. </p>
+        <p>GPS</p> 
+    </td>
+    <td valign="TOP"> LiDAR: 360° FOV, range over 100 m
+        <p>All cameras together enable a 360° FOV</p>
+        <p>A system of cameras provides imagery to support near-range sensing of people and objects within 5m from vehicle. </p>
+    </td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td valign="TOP"> Waymo2017 <a href="#6">[6]</a> </td>
+    <td valign="TOP"> 2017 </td>
+    <td valign="TOP"> Over the last eight years, Waymo has tested its vehicles in four U.S. states and self-driven in more than 20 cities—from sunny Phoenix, AZ to rainy Kirkland, WA—accumulating more than 3.5 million autonomous miles in the process.
+        <p>Waymo has set up a private, 91-acre, closed-course testing facility in California specially designed and built for our own unique testing needs. This private facility, nicknamed “Castle,” is set up like a mock city, including everything from high-            speed roads to suburban driveways to a railroad crossing. Waymo has developed more than 20,000 simulation scenarios at Castle.          Each recreates a driving situation for practicing.</p>
+        <p>Waymo’s system is designed so each vehicle does not operate outside of its approved operational design domain (It does not travel outside of a “geo-fenced” area, which has been mapped in detail) </p>
+    </td>
+    <td valign="TOP"> Different vehicles </td>
+    <td valign="TOP"> Typically short-range, mid-range and long-range LiDAR, a camera system and a radar system.
+        <p>Waymo’s vision system is comprised of several sets of high-resolution cameras, designed to work well at long range, in daylight and low-light conditions.</p>
+        <p>Waymo vehicles also have a number of additional sensors, including an audio detection system that can hear police and emergency vehicle sirens up to hundreds of feet away, and GPS.</p> </td>
+    <td valign="TOP"> Long-range LiDAR: 360° FOV, range: approx. 320 m
+        <p>360° camera view</p>
+        <p>360° radar view</p>
+    </td>
+  </tr>
+  
+  
+  <tr>
+    <td valign="TOP"> Tesla <a href="#12">[12]</a>, <a href="#13">[13]</a> </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP"> Tesla </td>
+    <td valign="TOP"> A forward-facing radar
+      <p>Twelve ultrasonic sensors</p>
+      <p>Eight surround cameras </p> 
+    </td>
+    <td valign="TOP"> Radar: range up to 160 m.
+      <p>Ultrasonics: range up to 8 m.</p>
+      <p>All eight cameras together: 360° FOV, range up to 250 m .</p>
+      <p>Narrow front camera: range up to 250 m.</p>
+      <p>Main front camera: range up to 150 m.</p>
+      <p>Wide front camera: 120° fisheye lens, range up to 60 m.</p>
+      <p>Two forward looking side cameras: 90° FOV, range up to 80 m.</p>
+      <p>Two rearward looking side cameras: range up to 100 m.</p>
+      <p>Rear camera: range up to 50 m.</p>
+    </td>
+</tr>
+  
+  
+  <tr>
+    <td valign="TOP"> GM + Cruise <a href="#14">[14]</a>, <a href="#15">[15]</a> </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP"> "Our driverless cars are on the road in California, Arizona, and Michigan navigating some of the most challenging and unpredictable driving environments." <a href="#15">[15]</a>
+      <p>"In our controlled deployment, our self-driving vehicles will drive only in known geo-fenced boundaries, and only on roads for which we have developed high-definition map data. They will also drive only under known operational conditions and constraints that apply to the entire fleet." <a href="#16">[16]</a> </p>
+    </td>
+    <td valign="TOP"> GM </td>
+    <td valign="TOP"> 5 LiDARs
+      <p>16 cameras </p>
+      <p>21 radars </p>
+    </td>
+    <td valign="TOP"> All sensors together scan both long and short range with views 360 degrees around the vehicle.
+      <p>Field of view overlaps enable 360-degree vision even if a sensor fails.  </p>
+    </td>
+</tr>
+
+
+
+  <tr>
+    <td valign="TOP"> Zoox <a href="#17">[17]</a>, <a href="#18">[18]</a> </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP"> <p> Zoox has a California DMV permit to test these vehicles on public roads.  </p>
+      <p>Zoox's vehicle testing team performs daily drives around the San Francisco Bay Area. They test in various weather and road conditions on private roads, test tracks, and public roads. </p>
+      <p>Today (December 2018), Zoox's system can drive autonomously in a range of conditions, from suburbs, to freeways at higher speeds, and dense urban environments. </p>
+    </td>
+    <td valign="TOP"> Toyota Highlanders and Prius C’s</td>
+    <td valign="TOP"> Symmetric sensor configuration using multiple cameras, lidar, radar, and proprietary sensors. </td>
+    <td valign="TOP"> All sensors together provide a 360° view </td>
+</tr>
+  
+  
+  
+  <tr>
+    <td valign="TOP"> Nvidia <a href="#19">[19]</a>, <a href="#20">[20]</a>, <a href="#21">[21]</a> </td>
+    <td valign="TOP"> 2016 / 2018 </td>
+    <td valign="TOP"> <p>2016: </p>
+      <p>"For a typical drive in Monmouth County NJ from our ofﬁce in Holmdel to Atlantic Highlands, we are autonomous approximately 98% of the time. We also drove 10 miles on the Garden State Parkway (a multi-lane divided highway with on and off ramps) with zero intercepts." <a href="#19">[19]</a></p>
+      <p>2018: ? </p>
+    </td>
+    <td valign="TOP">2016 Lincoln MKZ, 2013 Ford Focus</td>
+    <td valign="TOP"> <p>Three front-facing cameras mounted behind the windshield.</p>
+      <p>For testing only one front-facing camera was used.</p>
+      <p>2018: Multiple cameras, radar and lidar sensors </p>
+    </td>
+    <td valign="TOP"> <p>2016: ?</p>
+      <p>2018: All sensors together provide a 360° view </p>
+    </td>
+</tr>
+  
+  
+  
+  <tr>
+    <td valign="TOP"> Aptiv <a href="#22">[22]</a>, <a href="#23">[23]</a>, <a href="#24">[24]</a>, <a href="#25">[25]</a> </td>
+    <td valign="TOP"> 2015 - 2018 </td>
+    <td valign="TOP"> 
+       <p>First coast-to-coast autonomous drive in Apr 2015: "Our team and technology helped complete the longest automated vehicle drive ever – traveling nearly 3,400 miles from San Francisco to New York City, with 99 percent of the drive in fully automated mode. The vehicle successfully navigated through complex driving situations collecting data essential to advancing the emerging active safety technology sector." <a href="#1">[24]</a></p>
+       <p>"At CES 2018 in Las Vegas, our self-driving cars performed more than 400 point-to-point rides, 99% of the miles driven in fully autonomous mode, with a 4.997 average ride rating." <a href="#22">[22]</a></p>
+       <p>"In May 2018, our team announced the deployment of 30 self-driving cars, equipped with Aptiv’s autonomous driving platform. These vehicles are offered to the public of Las Vegas via the Lyft app. We are proud of a significant milestone: 5,000 self-driving public rides—powered by the Aptiv autonomous driving platform." <a href="#25">[25]</a> </p>
+    </td>
+    <td valign="TOP"> BMW 5 </td>
+    <td valign="TOP"> 
+        4 short-range LiDARs:
+       <ul> 
+         <li> One in the front</li>
+         <li> One in the rear</li>
+         <li> One on each side of the car below the side mirror</li>
+        </ul>
+        5 long-range LiDARs:
+        <ul>
+          <li>Two in the front</li>
+          <li> One in the rear</li>
+          <li> One on each side of the car</li>
+        </ul>
+        6 electronically scanning radars (ESR):
+        <ul> 
+          <li> Three in the front</li>
+          <li> One in the rear</li>
+          <li> One on each side of the car</li></ul>
+        4 short-range radars (SRR):
+        <ul> 
+          <li> Two in the front</li>
+          <li> Two in the rear</li>
+        </ul>
+        <p>1 trifocal camera behind the windscreen</p>
+        <p>1 traffic light camera behind the windscreen</p>
+        <p>2 GPS antennas</p>
+        <p>1 Dedicated Short Range Communications antenna (DSRC) </p>
+    </td>
+    <td valign="TOP"> 360° radar technology </td>
+  </tr>
+  
+  <tr>
+    <td valign="TOP"> Lyft <a href="#26">[26]</a> </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP"> 
+        4 near-angle cameras: 
+        <ul>
+            <li> Two in the front</li>
+            <li> Two directed to the left and right of the vehicle respectively</li>
+        </ul>
+        4 wide-angle cameras:
+        <ul>
+            <li> One forward-facing</li>
+            <li> One backward-facing</li>
+            <li> Two directed to the left and right of the vehicle respectively.</li>
+        </ul>
+          <p>One front-facing long-range radar.</p>
+          <p>One front-facing short-range radar.</p>
+          <p>One top-mounted LiDAR sensor </p>
+    </td>
+    <td valign="TOP"> <p>Near-angle cameras: approx. 60° FOV each. Together, they aquire a combined view of approx. 240° FOV.</p>
+      <p>Wide-angle cameras: approx. 150° FOV each.</p>
+      <p>Long-range radar: approx. 35° FOV</p>
+      <p>Short-range radar: approx. 80° FOV</p>
+      <p>LiDAR: 360° FOV </p>
+    </td>
+</tr>
+  
+  
+  
+   <tr>
+    <td valign="TOP"> Ford <a href="#27">[27]</a> </td>
+    <td valign="TOP">  </td>
+    <td valign="TOP"> There are fleets of vehicles testing on public roads in Miami, Fla., Pittsburgh, Pa. and Dearborn, Mich.  </td>
+    <td valign="TOP"> </td>
+    <td valign="TOP"> <p>Ford Fusion Hybrid sedan</p>
+      <p>360-degree view camera</p>
+      <p>Rear-facing camera</p>
+      <p>Top-mounted LiDAR</p>
+      Four radar sensors:
+      <ul>
+        <li>One front-facing radar</li>
+        <li> One rear-facing radar</li>
+      </ul>
+      <p>One radar on each side of the vehicle</p>
+    </td>
+    <td valign="TOP"> <p>LiDAR: 360° FOV, more than 250 m range.</p>
+      <p>Cameras: 360° FOV </p>
+    </td>
+</tr>
+  
+  
+   <tr>
+    <td valign="TOP"> PROUD-Car Test 2013 (BRAiVE, VisLab) <a href="#28">[28]</a>, <a href="#29">[29]</a>  </td>
+    <td valign="TOP"> 2013 </td>
+    <td valign="TOP"> Route from the Campus of the University of Parma to Piazza della Pace: It included two-way rural roads, two freeways with junctions, and plenty of urban areas such as pedestrian crossings, tunnels, artificial bumps, tight roundabouts, and traffic lights. </td>
+    <td valign="TOP"> </td>
+    <td valign="TOP"> Altogether: 10 cameras, 5 laser scanners, 1 GPS+IMU, 1 e-Stop system.
+      Cameras:
+      <ul>
+        <li> 4 front-facing cameras (two color and two monochrome DragonFly2 cameras) are placed behind the windshield.</li>
+        <li>2 cameras at the back in the boot top</li>
+        <li> 1 camera (FireFlyMV) in each side mirror</li>
+        <li> 1 lateral camera on each side of the hood </li>
+      </ul>
+      Laser scanners:
+      <ul>
+        <li> Two UTM-30LX are mounted on the sides of the front bumper</li>
+        <li> One UTM-30LX is placed on the center rear bumper</li>
+        <li> One IBEO Lux is placed in the front bumper’s center</li>
+      </ul>
+      <p>One Hella IDIS laser is mounted over the Lux in forward looking direction </p>
+    </td>
+    <td valign="TOP"> 
+    HxV aperture of the cameras:
+        <ul>
+            <li> Stereo front (short baseline): 73.76° x 58.86°</li>
+            <li> Stereo front (long baseline): 73.76° x 58.86°</li>
+            <li> Stereo back: 130.81° x 117.32°</li>
+            <li> Side mirror: 96.93° x 71.54°</li>
+            <li> Lateral: 100.43° x 84.15°</li>
+        </ul>
+        Laser scanners:
+        <ul>
+            <li> Hokuyo UTM-30LX: 270° FOV, 0.25° resolution, 0.1 −30 m </li>
+            <li> IBEO Lux: 85° FOV, 0.125 −1° resolution, 0.3 −80 m range</li>
+            <li> Hella IDIS: 16° FOV, 1° resolution, 0.7 − 110 m range</li>
+         </ul>
+    </td>
+</tr>
+</table>
+
+<h2 id="citations">Citations</h2>
+<p id="1">[1]. J. Ziegler, P. Bender, M. r. Schreiber, H. Lategahn, T. Strauss, C. Stiller, T. Dang, U. Franke, N. Appenrodt, C. G. Keller et al., "Making bertha drive-an autonomous journey on a historic route." IEEE Intelligent Transportation Systems Magazine, vol. 6, no. 2, pp. 8-20, 2014.
+<p id="2">[2]. M. Aeberhard, S. Rauch, M. Bahram, G. Tanzmeister, J. Thomas, Y. Pilat, F. Homm, W. Huber, and N. Kaempchen, "Experience, results and lessons learned from automated driving on germany's highways," IEEE Intelligent Transportation Systems Magazine, vol. 7, no. 1, pp. 42-57, 2015.
+<p id="3">[3]. F. Kunz, D. Nuss, J. Wiest, H. Deusch, S. Reuter, F. Gritschneder, A. Scheel, M. Stübler, M. Bach, P. Hatzelmann et al., "Autonomous driving at ulm university: A modular, robust, and sensor-independent fusion approach," in Intelligent Vehicles Symposium (IV), 2015 IEEE. IEEE, 2015, pp. 666-673.
+<p id="4">[4]. Montemerlo, M., Becker, J., Bhat, S., Dahlkamp, H., Dolgov, D., Ettinger, S., ... &amp; Johnston, D. (2008). Junior: The stanford entry in the urban challenge. Journal of field Robotics, 25(9), 569-597.
+<p id="5">[5]. Urmson, C., Anhalt, J., Bagnell, D., Baker, C., Bittner, R., Clark, M. N., ... &amp; Gittleman, M. (2009). Autonomous driving in urban environments: Boss and the urban challenge. In The DARPA Urban Challenge (pp. 1-59). Springer, Berlin, Heidelberg.
+<p id="6">[6]. WAYMO, On the Road to Fully Self-Driving: Waymo Safety Report, 2017. 
+<p id="7">[7]. http://apollo.auto/platform/perception.html 17.12.2018
+<p id="8">[8]. https://github.com/ApolloAuto/apollo/blob/master/modules/perception/README.md 17.12.2018
+<p id="9">[9]. https://www.uber.com/blog/san-francisco/san-francisco-your-self-driving-uber-is-arriving-now/ 18.12.2018
+<p id="10">[10]. https://www.uber.com/blog/our-road-to-self-driving-vehicles/ 18.12.2018
+<p id="11">[11]. https://www.uber.com/blog/pittsburgh/pittsburgh-self-driving-uber/ 18.12.2018
+<p id="12">[12]. https://www.tesla.com/autopilot 18.12.2018
+<p id="13">[13]. https://www.tesla.com/en_NZ/models 18.12.2018
+<p id="14">[14]. https://getcruise.com/mission 18.12.2018
+<p id="15">[15]. https://getcruise.com/faq 18.12.2018
+<p id="16">[16]. Uber ATG Safety Report 2018 https://uber.app.box.com/v/UberATGSafetyReport
+<p id="17">[17]. 2018 Safety Innovation at Zoox report https://zoox.com/wp-content/uploads/2018/12/Safety_Report_12Dec2018.pdf
+<p id="18">[18]. https://i.ytimg.com/vi/aKEQJn6zalw/maxresdefault.jpg 19.12.2018
+<p id="19">[19]. Bojarski, M., Del Testa, D., Dworakowski, D., Firner, B., Flepp, B., Goyal, P., ... &amp; Zhang, X. (2016). End to end learning for self-driving cars. arXiv preprint arXiv:1604.07316.
+<p id="20">[20]. NVIDIA Self-Driving Safety Report 2018 https://www.nvidia.com/content/dam/en-zz/Solutions/self-driving-cars/safety-report/NVIDIA-Self-Driving-Safety-Report-2018.pdf
+<p id="21">[21]. DAVE 2 driving a lincoln. URL: https://drive.google.com/open?id=0B9raQzOpizn1TkRIa241ZnBEcjQ.
+<p id="22">[22]. https://www.aptiv.com/annual-report 20.12.2018
+<p id="23">[23]. The Autonomous Driving Platform: How Will Cars Actually Drive Themselves? https://www.aptiv.com/media/article/2018/01/07/the-autonomous-driving-platform-how-will-cars-actually-drive-themselves 20.12.2018
+<p id="24">[24]. https://www.aptiv.com/our-journey 20.12.2018
+<p id="25">[25]. https://www.aptiv.com/media/article/cto-blog-aptiv-celebrates-5-000-self-driving-public-rides 20.12.2018
+<p id="26">[26]. https://www.lyft.com/self-driving-vehicles/vehicle-technology 20.12.2018
+<p id="27">[27]. A Matter of Trust - Ford's Approach to Developing Self-Driving Vehicles https://media.ford.com/content/dam/fordmedia/pdf/Ford_AV_LLC_FINAL_HR_2.pdf
+<p id="28">[28]. Vislab, University of Parma, Italy - Public Road Urban Driverless-Car Test 2013 - World premiere of BRAiVE. http://vislab.it/proud-en/
+<p id="29">[29]. Grisleri, P., &amp; Fedriga, I. (2010). The braive autonomous ground vehicle platform. IFAC Proceedings Volumes, 43(16), 497-502.
+
+
+<br />
+<br />
+<br />
+<a href="#bck">To top</a>
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">
+        (c) Robert Bosch GmbH 2019, <a href="http://www.bosch.com/research">www.bosch.com/research</a>.
+		<p></p>
+        This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
