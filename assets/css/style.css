@@ -269,10 +269,16 @@ a:hover { text-decoration: underline; }
 @media screen and (max-width: 42em) { .btn { display: block; width: 100%; padding: 0.75rem; font-size: 0.9rem; }
   .btn + .btn { margin-top: 1rem; margin-left: 0; } }
 
+/** Contain overflow in all browsers. 
 .page-header { color: #fff; text-align: center; background-image: url("../../img/bosch.jpg"); background-repeat: no-repeat; background-position: center; }
 @media screen and (min-width: 64em) { .page-header { padding: 5rem 6rem; } }
 @media screen and (min-width: 42em) and (max-width: 64em) { .page-header { padding: 3rem 4rem; } }
 @media screen and (max-width: 42em) { .page-header { padding: 2rem 1rem; } }
+*/
+.page-header { color: #fff; text-align: center; background-image: url("../../img/bosch.jpg"); background-repeat: no-repeat; background-position: center; }
+@media screen and (min-width: 72em) { .page-header { padding: 5rem 6rem; } }
+@media screen and (min-width: 50em) and (max-width: 72em) { .page-header { padding: 3rem 4rem; } }
+@media screen and (max-width: 50em) { .page-header { padding: 2rem 1rem; } }
 
 .project-name { margin-top: 0; margin-bottom: 0.1rem; }
 @media screen and (min-width: 64em) { .project-name { font-size: 2.0rem; } }
